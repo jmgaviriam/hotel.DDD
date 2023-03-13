@@ -6,4 +6,11 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Comandos\Habitacion\" />
+    <Folder Include="Comandos\Reserva\" />
+    <Folder Include="Eventos\Habitacion\" />
+    <Folder Include="Eventos\Reserva\" />
+  </ItemGroup>
+
 </Project>
