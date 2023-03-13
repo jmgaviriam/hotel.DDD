@@ -1,0 +1,15 @@
+C:\Users\57318\Desktop\Liga Sofka\DDD-BD-Dapper-PruebasUnitarias\Semana7\hotel.DDD\hotel.DDD.Dominio.CasoDeUso\bin\Debug\net6.0\hotel.DDD.Dominio.CasoDeUso.deps.json
+C:\Users\57318\Desktop\Liga Sofka\DDD-BD-Dapper-PruebasUnitarias\Semana7\hotel.DDD\hotel.DDD.Dominio.CasoDeUso\bin\Debug\net6.0\hotel.DDD.Dominio.CasoDeUso.dll
+C:\Users\57318\Desktop\Liga Sofka\DDD-BD-Dapper-PruebasUnitarias\Semana7\hotel.DDD\hotel.DDD.Dominio.CasoDeUso\bin\Debug\net6.0\hotel.DDD.Dominio.CasoDeUso.pdb
+C:\Users\57318\Desktop\Liga Sofka\DDD-BD-Dapper-PruebasUnitarias\Semana7\hotel.DDD\hotel.DDD.Dominio.CasoDeUso\bin\Debug\net6.0\hotel.DDD.Dominio.dll
+C:\Users\57318\Desktop\Liga Sofka\DDD-BD-Dapper-PruebasUnitarias\Semana7\hotel.DDD\hotel.DDD.Dominio.CasoDeUso\bin\Debug\net6.0\hotel.DDD.Dominio.pdb
+C:\Users\57318\Desktop\Liga Sofka\DDD-BD-Dapper-PruebasUnitarias\Semana7\hotel.DDD\hotel.DDD.Dominio.CasoDeUso\obj\Debug\net6.0\hotel.DDD.Dominio.CasoDeUso.csproj.AssemblyReference.cache
+C:\Users\57318\Desktop\Liga Sofka\DDD-BD-Dapper-PruebasUnitarias\Semana7\hotel.DDD\hotel.DDD.Dominio.CasoDeUso\obj\Debug\net6.0\hotel.DDD.Dominio.CasoDeUso.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\57318\Desktop\Liga Sofka\DDD-BD-Dapper-PruebasUnitarias\Semana7\hotel.DDD\hotel.DDD.Dominio.CasoDeUso\obj\Debug\net6.0\hotel.DDD.Dominio.CasoDeUso.AssemblyInfoInputs.cache
+C:\Users\57318\Desktop\Liga Sofka\DDD-BD-Dapper-PruebasUnitarias\Semana7\hotel.DDD\hotel.DDD.Dominio.CasoDeUso\obj\Debug\net6.0\hotel.DDD.Dominio.CasoDeUso.AssemblyInfo.cs
+C:\Users\57318\Desktop\Liga Sofka\DDD-BD-Dapper-PruebasUnitarias\Semana7\hotel.DDD\hotel.DDD.Dominio.CasoDeUso\obj\Debug\net6.0\hotel.DDD.Dominio.CasoDeUso.csproj.CoreCompileInputs.cache
+C:\Users\57318\Desktop\Liga Sofka\DDD-BD-Dapper-PruebasUnitarias\Semana7\hotel.DDD\hotel.DDD.Dominio.CasoDeUso\obj\Debug\net6.0\hotel.DDD.Dominio.CasoDeUso.csproj.CopyComplete
+C:\Users\57318\Desktop\Liga Sofka\DDD-BD-Dapper-PruebasUnitarias\Semana7\hotel.DDD\hotel.DDD.Dominio.CasoDeUso\obj\Debug\net6.0\hotel.DDD.Dominio.CasoDeUso.dll
+C:\Users\57318\Desktop\Liga Sofka\DDD-BD-Dapper-PruebasUnitarias\Semana7\hotel.DDD\hotel.DDD.Dominio.CasoDeUso\obj\Debug\net6.0\refint\hotel.DDD.Dominio.CasoDeUso.dll
+C:\Users\57318\Desktop\Liga Sofka\DDD-BD-Dapper-PruebasUnitarias\Semana7\hotel.DDD\hotel.DDD.Dominio.CasoDeUso\obj\Debug\net6.0\hotel.DDD.Dominio.CasoDeUso.pdb
+C:\Users\57318\Desktop\Liga Sofka\DDD-BD-Dapper-PruebasUnitarias\Semana7\hotel.DDD\hotel.DDD.Dominio.CasoDeUso\obj\Debug\net6.0\ref\hotel.DDD.Dominio.CasoDeUso.dll

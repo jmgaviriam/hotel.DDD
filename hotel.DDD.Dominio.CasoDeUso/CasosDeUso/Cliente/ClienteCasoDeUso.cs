@@ -16,7 +16,7 @@ using Newtonsoft.Json;
 
 namespace hotel.DDD.Dominio.CasoDeUso.CasosDeUso.Cliente
 {
-    internal class ClienteCasoDeUso : IClienteCasoDeUso
+    public class ClienteCasoDeUso : IClienteCasoDeUso
     {
         private readonly IRepositorioDeEventos<EventoGuardado> _repositorioDeEventos;
 

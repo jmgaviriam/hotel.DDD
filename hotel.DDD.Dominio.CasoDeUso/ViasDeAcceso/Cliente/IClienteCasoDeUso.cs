@@ -8,7 +8,7 @@ using hotel.DDD.Dominio.Agregados.Cliente.ObjetosDeValor.ObjetosDeValorCliente;
 
 namespace hotel.DDD.Dominio.CasoDeUso.ViasDeAcceso.Cliente
 {
-    internal interface IClienteCasoDeUso
+    public interface IClienteCasoDeUso
     {
         Task RegistrarCliente(RegistrarClienteComando comando);
         Task AgregarPQR(AgregarPQRComando comando);
