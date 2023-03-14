@@ -4,21 +4,13 @@ namespace hotel.DDD.Dominio.Agregados.Cliente.ObjetosDeValor.ObjetosDeValorClien
 {
     public class ClienteId : Identidad
     {
-        public Guid value { get; init; }
 
-        internal ClienteId(Guid value_) : base(value_)
+        internal ClienteId(Guid id) : base(id) { }
+
+        public static ClienteId Create(Guid id)
         {
-            value = value_;
+            return new ClienteId(id);
         }
 
-        public static ClienteId Create(Guid value_)
-        {
-            return new ClienteId(value_);
-        }
-
-        public static implicit operator Guid(ClienteId clienteId)
-        {
-            return clienteId.value;
-        }
     }
 }

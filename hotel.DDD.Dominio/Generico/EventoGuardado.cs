@@ -12,7 +12,7 @@ namespace hotel.DDD.Dominio.Generico
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public string IdGuardado { get; set; }
+        public int IdGuardado { get; set; }
         public string NombreGuardado { get; set; }
         public string IdAgregado { get; set; }
         public string CuerpoDelEvento { get; set; }

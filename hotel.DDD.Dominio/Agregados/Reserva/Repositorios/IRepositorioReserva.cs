@@ -11,7 +11,7 @@ namespace hotel.DDD.Dominio.Agregados.Reserva.Repositorios
         Task ActualizarFechas(Guid reservaId, Fechas fechas);
         Task AgregarFuncionario(Guid reservaId, Funcionario funcionario);//Al parecer no se usa en el código porque el funcionario se crea en el constructor de la entidad Funcionario
         Task AgregarMedioDePago(Guid reservaId, MedioDePago medioDePago);//Al parecer no se usa en el código porque el medio de pago se crea en el constructor de la entidad MedioDePago
-        Task ActualizarDatosPersonales(Guid funcionarioId, DatosPersonales datosPersonales);
+        Task ActualizarDatosPersonales(Guid funcionarioId, FuncionarioDatosPersonales datosPersonales);
         Task ActualizarTipoDeMedioDePago(Guid medioDePagoId, TipoDeMedioDePago tipoDeMedioDePago);
     }
 }

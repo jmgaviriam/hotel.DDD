@@ -9,13 +9,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dominio", "Dominio", "{5B56
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infraestructura", "Infraestructura", "{F2410C96-4E93-434D-9478-CBC58D60697D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hotel.DDD.API", "hotel.DDD.API\hotel.DDD.API.csproj", "{B8023332-25FF-4A0F-9967-DEB10A0B1CC3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "hotel.DDD.API", "hotel.DDD.API\hotel.DDD.API.csproj", "{B8023332-25FF-4A0F-9967-DEB10A0B1CC3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hotel.DDD.Dominio", "hotel.DDD.Dominio\hotel.DDD.Dominio.csproj", "{591F11D3-FA03-4D05-8B4C-D194EBA38D92}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "hotel.DDD.Dominio", "hotel.DDD.Dominio\hotel.DDD.Dominio.csproj", "{591F11D3-FA03-4D05-8B4C-D194EBA38D92}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hotel.DDD.Dominio.CasoDeUso", "hotel.DDD.Dominio.CasoDeUso\hotel.DDD.Dominio.CasoDeUso.csproj", "{7992080A-870D-4911-A047-7A1B1DB2CF7D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "hotel.DDD.Dominio.CasoDeUso", "hotel.DDD.Dominio.CasoDeUso\hotel.DDD.Dominio.CasoDeUso.csproj", "{7992080A-870D-4911-A047-7A1B1DB2CF7D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hotel.DDD.Infraestructura", "hotel.DDD.Infraestructura\hotel.DDD.Infraestructura.csproj", "{E4E2DDCE-E379-4726-9A7B-A9494490BBF0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "hotel.DDD.Infraestructura", "hotel.DDD.Infraestructura\hotel.DDD.Infraestructura.csproj", "{E4E2DDCE-E379-4726-9A7B-A9494490BBF0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

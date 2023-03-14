@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using hotel.DDD.Infraestructura.Datos.DataBaseContext;
+using hotel.DDD.Infraestructura;
 
 #nullable disable
 
@@ -23,9 +23,11 @@ namespace hotel.DDD.Infraestructura.Migrations
 
             modelBuilder.Entity("hotel.DDD.Dominio.Generico.EventoGuardado", b =>
                 {
-                    b.Property<string>("IdGuardado")
+                    b.Property<int>("IdGuardado")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("nvarchar(450)");
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdGuardado"));
 
                     b.Property<string>("CuerpoDelEvento")
                         .IsRequired()

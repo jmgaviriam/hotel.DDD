@@ -9,7 +9,7 @@ using hotel.DDD.Dominio.Eventos.Cliente;
 
 namespace hotel.DDD.Dominio.Agregados.Cliente.Entidades
 {
-    public class AplicadorDeCambiosDeCliente
+    public class ReconstruccionDelCliente
     {
         public Cliente CrearAgregado(List<EventoDeDominio> eventos, ClienteId id)
         {
@@ -18,14 +18,20 @@ namespace hotel.DDD.Dominio.Agregados.Cliente.Entidades
             {
                 switch (evento)
                 {
+                    case DatosPersonalesAgregados datosPersonalesAgregados:
+                        cliente.SetDatosPersonalesAgregado(datosPersonalesAgregados.DatosPersonales);
+                        break;
                     case DatosPersonalesActualizados datosPersonalesActualizados:
-                        cliente.SetDatosPersonales(datosPersonalesActualizados.DatosPersonales);
+                        cliente.ActualizarDatosPersonalesAgregado(datosPersonalesActualizados.DatosPersonales);
                         break;
                     case PQRAgregado pQRAgregado:
-                        cliente.AgregarPQR(pQRAgregado.PQR);
+                        cliente.AgregarPQRAgregado(pQRAgregado.PQR);
                         break;
                     case DetallesDelPQRAgregados detallesDelPQRAgregados:
-                        cliente.AgregarDetallesDelPQR(detallesDelPQRAgregados.DetallesDelPQR);
+                        cliente.AgregarDetallesDelPQRAgregado(detallesDelPQRAgregados.DetallesDelPQR);
+                        break;
+                    case DetallesDelPQRActualizados detallesDelPQRActualizados:
+                        cliente.ActualizarDetallesDelPQRAgregado(detallesDelPQRActualizados.PqrId, detallesDelPQRActualizados.DetallesDelPQR);
                         break;
                 }
             });

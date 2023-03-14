@@ -5,7 +5,7 @@
 namespace hotel.DDD.Infraestructura.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialMigrations : Migration
+    public partial class InitialMigration : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -14,7 +14,8 @@ namespace hotel.DDD.Infraestructura.Migrations
                 name: "EventoGuardado",
                 columns: table => new
                 {
-                    IdGuardado = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    IdGuardado = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
                     NombreGuardado = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     IdAgregado = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     CuerpoDelEvento = table.Column<string>(type: "nvarchar(max)", nullable: false)

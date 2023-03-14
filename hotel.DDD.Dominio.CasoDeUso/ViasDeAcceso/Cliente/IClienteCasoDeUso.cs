@@ -10,7 +10,10 @@ namespace hotel.DDD.Dominio.CasoDeUso.ViasDeAcceso.Cliente
 {
     public interface IClienteCasoDeUso
     {
-        Task RegistrarCliente(RegistrarClienteComando comando);
-        Task AgregarPQR(AgregarPQRComando comando);
+        Task<Agregados.Cliente.Entidades.Cliente> ObtenerClientePorId(Guid id);
+        Task<Agregados.Cliente.Entidades.Cliente> RegistrarCliente(RegistrarClienteComando comando);
+        Task<Agregados.Cliente.Entidades.Cliente> ActualizarDatosPersonalesDelCliente(ActualizarClienteComando comando);
+        Task<Agregados.Cliente.Entidades.Cliente> AgregarPQRAlCliente(AgregarPQRComando comando);
+        Task<Agregados.Cliente.Entidades.Cliente> ActualizarPQRDelCliente(ActualizarDetallesDelPQRComando comando);
     }
 }

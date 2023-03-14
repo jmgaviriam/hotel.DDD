@@ -2,14 +2,14 @@
 
 namespace hotel.DDD.Dominio.Agregados.Cliente.ObjetosDeValor.ObjetosDeValorCliente
 {
-    public record DatosPersonales
+    public record ClienteDatosPersonales
     {
         public string Nombre { get; init; }
         public string Apellido { get; init; }
         public string Correo { get; init; }
         public string Telefono { get; init; }
 
-        public DatosPersonales(string nombre, string apellido, string correo, string telefono)
+        public ClienteDatosPersonales(string nombre, string apellido, string correo, string telefono)
         {
             Nombre = nombre;
             Apellido = apellido;
@@ -17,7 +17,7 @@ namespace hotel.DDD.Dominio.Agregados.Cliente.ObjetosDeValor.ObjetosDeValorClien
             Telefono = telefono;
         }
 
-        public static DatosPersonales Create(string nombre, string apellido, string correo, string telefono)
+        public static ClienteDatosPersonales Create(string nombre, string apellido, string correo, string telefono)
         {
 
             Guard.Against.NullOrEmpty(nombre, nameof(nombre), "El nombre no puede estar vacio");
@@ -26,7 +26,7 @@ namespace hotel.DDD.Dominio.Agregados.Cliente.ObjetosDeValor.ObjetosDeValorClien
             Guard.Against.NullOrEmpty(telefono, nameof(telefono), "El telefono no puede estar vacio");
 
 
-            return new DatosPersonales(nombre, apellido, correo, telefono);
+            return new ClienteDatosPersonales(nombre, apellido, correo, telefono);
         }
     }
 }

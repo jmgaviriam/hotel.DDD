@@ -10,6 +10,6 @@ namespace hotel.DDD.Dominio.CasoDeUso.ViasDeAcceso.Eventos
 {
     public interface IRepositorioDeEventos<T> : IRepositoryBase<T> where T : class
     {
-        Task<List<EventoGuardado>> ObtenerEventosPorAgregadoId(Guid agregadoId);//EventoGuardo va en la capa de infraestructura
+        Task<List<EventoGuardado>> ObtenerEventosPorAgregadoId(string agregadoId);//EventoGuardo va en la capa de infraestructura
     }
 }

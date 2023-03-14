@@ -12,12 +12,5 @@ namespace hotel.DDD.Dominio.Comandos.Cliente
         public DateTime Fecha { get; set; }
         public string Motivo { get; set; }
 
-        public AgregarPQRComando(string clienteId, DateTime fecha, string motivo)//es necesario?
-        {
-            ClienteId = clienteId;
-            Fecha = fecha;
-            Motivo = motivo;
-        }
-
     }
 }

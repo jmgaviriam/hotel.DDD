@@ -9,18 +9,19 @@ namespace hotel.DDD.Dominio.Agregados.Cliente.Entidades
         public Guid Id { get; init; }
         public DetallesDelPQR DetallesDelPQR { get; private set; }
 
-        public Guid ClienteId { get; init; }
-        public virtual Cliente Cliente { get; private set; }
-
-        public PQR(Guid id, Guid clienteId)
+        public PQR(Guid id)
         {
             this.Id = id;
-            this.ClienteId = clienteId;
         }
 
         public void SetDetallesDelPQR(DetallesDelPQR detallesDelPQR)
         {
             this.DetallesDelPQR = detallesDelPQR;
+        }
+
+        public void ActualizarDetalles(DetallesDelPQR detallesDelPqr)
+        {
+            this.DetallesDelPQR = detallesDelPqr;
         }
     }
 }

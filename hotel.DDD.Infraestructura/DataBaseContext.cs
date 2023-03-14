@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using hotel.DDD.Dominio.Generico;
 using Microsoft.EntityFrameworkCore;
 
-namespace hotel.DDD.Infraestructura.Datos.DataBaseContext
+namespace hotel.DDD.Infraestructura
 {
     public class DataBaseContext : DbContext
     {

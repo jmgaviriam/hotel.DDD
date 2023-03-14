@@ -1,8 +1,8 @@
 using hotel.DDD.Dominio.CasoDeUso.CasosDeUso.Cliente;
 using hotel.DDD.Dominio.CasoDeUso.ViasDeAcceso.Cliente;
 using hotel.DDD.Dominio.CasoDeUso.ViasDeAcceso.Eventos;
-using hotel.DDD.Infraestructura.Datos.DataBaseContext;
-using hotel.DDD.Infraestructura.Datos.Respositorios;
+using hotel.DDD.Infraestructura;
+using hotel.DDD.Infraestructura.Respositorios;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -23,6 +23,12 @@ builder.Services.AddScoped(typeof(IRepositorioDeEventos<>), typeof(RepositorioDe
 builder.Services.AddScoped<IClienteCasoDeUso, ClienteCasoDeUso>();
 
 var app = builder.Build();
+
+using (var scope = app.Services.CreateScope())
+{
+    var context = scope.ServiceProvider.GetRequiredService<DataBaseContext>();
+    context.Database.Migrate();
+}
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

@@ -2,44 +2,81 @@
 using hotel.DDD.Dominio.Agregados.Cliente.ObjetosDeValor.ObjetosDeValorCliente;
 using hotel.DDD.Dominio.Agregados.Cliente.ObjetosDeValor.ObjetosDeValorPQR;
 using hotel.DDD.Dominio.Comun;
+using hotel.DDD.Dominio.Eventos.Cliente;
 
 namespace hotel.DDD.Dominio.Agregados.Cliente.Entidades
 {
     public class Cliente : EventoDeAgregado<ClienteId>
     {
         public ClienteId ClienteId { get; init; }
-        public DatosPersonales DatosPersonales { get; private set; }
+        public ClienteDatosPersonales DatosPersonales { get; private set; }
 
-        public virtual List<Reserva.Entidades.Reserva>? Reservas { get; private set; }
+        public virtual HistorialDeReservas HistorialDeReservas { get; private set; }
 
         public virtual List<PQR>? PQRs { get; private set; }
 
         #region Metodos de Cliente como gestor de eventos
-        public Cliente(ClienteId id) : base(id)
+        public Cliente(ClienteId clienteId) : base(clienteId)
         {
-            this.ClienteId = id;
+            this.ClienteId = clienteId;
         }
 
-        public void SetDatosPersonales(DatosPersonales datosPersonales)
+        public void setClienteId(ClienteId clienteId)
         {
-            this.DatosPersonales = datosPersonales;
+            AgregarEvento(new ClienteRegistrado(clienteId.ToString()));
         }
 
+        public void SetDatosPersonales(ClienteDatosPersonales datosPersonales)
+        {
+            AgregarEvento(new DatosPersonalesAgregados(datosPersonales));
+
+        }
+
+        public void ActualizarDatosPersonales(ClienteDatosPersonales datosPersonales)
+        {
+            AgregarEvento(new DatosPersonalesActualizados(datosPersonales));
+        }
+
+        public void AgregarPQR(PQR pqr)
+        {
+            AgregarEvento(new PQRAgregado(pqr));
+        }
+
+        public void AgregarDetallesDelPQR(DetallesDelPQR detallesDelPqr)
+        {
+            AgregarEvento(new DetallesDelPQRAgregados(detallesDelPqr));
+        }
+
+        public void ActualizarDetallesDelPQR(Guid pqrId, DetallesDelPQR detallesDelPqr)
+        {
+            var pqr = PQRs.FirstOrDefault(x => x.Id == pqrId);
+            if (pqr != null)
+            {
+                pqr.ActualizarDetalles(detallesDelPqr);
+                AgregarEvento(new DetallesDelPQRActualizados(pqrId, detallesDelPqr));
+            }
+            else
+            {
+                throw new ArgumentException($"No se encontró el PQR con Id {pqrId}.");
+            }
+        }
 
         #endregion
 
         #region Metodos de Cliente como entidad
 
-        public void AgregarReserva(Reserva.Entidades.Reserva reserva) //Pendiente por implementar
+        public void SetDatosPersonalesAgregado(ClienteDatosPersonales datosPersonales)
         {
-            if (Reservas == null)
-            {
-                Reservas = new List<Reserva.Entidades.Reserva>();
-            }
-            Reservas.Add(reserva);
+            this.DatosPersonales = datosPersonales;
+
         }
 
-        public void AgregarPQR(PQR pqr)
+        public void ActualizarDatosPersonalesAgregado(ClienteDatosPersonales datosPersonales)
+        {
+            this.DatosPersonales = datosPersonales;
+        }
+
+        public void AgregarPQRAgregado(PQR pqr)
         {
             if (PQRs == null)
             {
@@ -48,12 +85,23 @@ namespace hotel.DDD.Dominio.Agregados.Cliente.Entidades
             PQRs.Add(pqr);
         }
 
-        public void AgregarDetallesDelPQR(DetallesDelPQR detallesDelPqr)
+        public void AgregarDetallesDelPQRAgregado(DetallesDelPQR detallesDelPqr)
         {
             PQRs?.Last().SetDetallesDelPQR(detallesDelPqr);
         }
+
+        public void ActualizarDetallesDelPQRAgregado(Guid pqrId, DetallesDelPQR detallesDelPqr)
+        {
+            var pqr = PQRs.FirstOrDefault(x => x.Id == pqrId);
+            if (pqr != null)
+            {
+                pqr.ActualizarDetalles(detallesDelPqr);
+            }
+            else
+            {
+                throw new ArgumentException($"No se encontró el PQR con Id {pqrId}.");
+            }
+        }
         #endregion
-
-
     }
 }
