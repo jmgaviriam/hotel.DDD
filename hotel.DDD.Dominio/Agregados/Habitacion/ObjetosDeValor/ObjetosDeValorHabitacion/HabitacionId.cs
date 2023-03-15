@@ -1,24 +1,14 @@
-﻿namespace hotel.DDD.Dominio.Agregados.Habitacion.ObjetosDeValor.ObjetosDeValorHabitacion
+﻿using hotel.DDD.Dominio.Comun;
+
+namespace hotel.DDD.Dominio.Agregados.Habitacion.ObjetosDeValor.ObjetosDeValorHabitacion
 {
-    public record HabitacionId
+    public class HabitacionId : Identidad
     {
-        public Guid value { get; init; }
+        internal HabitacionId(Guid id) : base(id) { }
 
-        public HabitacionId(Guid value)
+        public static HabitacionId Create(Guid id)
         {
-            this.value = value;
+            return new HabitacionId(id);
         }
-
-        public static HabitacionId Create(Guid value_)
-        {
-            return new HabitacionId(value_);
-        }
-
-        public static implicit operator Guid(HabitacionId habitacionId)
-        {
-            return habitacionId.value;
-        }
-
-
     }
 }

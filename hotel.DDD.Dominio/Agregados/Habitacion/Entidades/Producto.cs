@@ -6,14 +6,21 @@ namespace hotel.DDD.Dominio.Agregados.Habitacion.Entidades
 {
     public class Producto
     {
-        public Guid Id { get; set; }
+        public Guid Id { get; init; }
         public DetallesDeProducto DetallesDeProducto { get; private set; }
-        public Guid HabitacionId { get; init; }
-        public virtual Habitacion Habitacion { get; private set; }
 
-        public Producto(Guid id, DetallesDeProducto detallesDeProducto)
+        public Producto(Guid id)
         {
             this.Id = id;
+        }
+
+        public void AgregarDetallesDeProducto(DetallesDeProducto detallesDeProducto)
+        {
+            this.DetallesDeProducto = detallesDeProducto;
+        }
+
+        public void ActualizarDetallesDeProducto(DetallesDeProducto detallesDeProducto)
+        {
             this.DetallesDeProducto = detallesDeProducto;
         }
     }

@@ -4,14 +4,16 @@ namespace hotel.DDD.Dominio.Agregados.Habitacion.Entidades
 {
     public class TipoDeHabitacion
     {
-        public Guid Id { get; set; }
-        public Guid HabitacionId { get; init; }
-        public virtual Habitacion Habitacion { get; private set; }
-        public DetallesDeHabitacion DetallesDeHabitacion { get; private set; }
+        public Guid Id { get; init; }
+        public DetallesDeHabitacion DetallesDeHabitacion { get; set; }
 
-        public TipoDeHabitacion(Guid id, DetallesDeHabitacion detallesDeHabitacion)
+        public TipoDeHabitacion(Guid id)
         {
             this.Id = id;
+        }
+
+        public void SetDetallesDeHabitacion(DetallesDeHabitacion detallesDeHabitacion)
+        {
             this.DetallesDeHabitacion = detallesDeHabitacion;
         }
 
