@@ -17,6 +17,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "hotel.DDD.Dominio.CasoDeUso
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "hotel.DDD.Infraestructura", "hotel.DDD.Infraestructura\hotel.DDD.Infraestructura.csproj", "{E4E2DDCE-E379-4726-9A7B-A9494490BBF0}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Pruebas", "Pruebas", "{06D02E4F-A46E-4832-B6C5-906AFC751435}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hotel.DDD.Pruebas", "hotel.DDD.Pruebas\hotel.DDD.Pruebas.csproj", "{5E9BECDA-03F0-41FF-B9EF-02538C83E1E4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,10 @@ Global
 		{E4E2DDCE-E379-4726-9A7B-A9494490BBF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E4E2DDCE-E379-4726-9A7B-A9494490BBF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E4E2DDCE-E379-4726-9A7B-A9494490BBF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E9BECDA-03F0-41FF-B9EF-02538C83E1E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E9BECDA-03F0-41FF-B9EF-02538C83E1E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E9BECDA-03F0-41FF-B9EF-02538C83E1E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E9BECDA-03F0-41FF-B9EF-02538C83E1E4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -48,6 +56,7 @@ Global
 		{591F11D3-FA03-4D05-8B4C-D194EBA38D92} = {5B560B5A-A213-470F-817D-4E8627D2C6B0}
 		{7992080A-870D-4911-A047-7A1B1DB2CF7D} = {5B560B5A-A213-470F-817D-4E8627D2C6B0}
 		{E4E2DDCE-E379-4726-9A7B-A9494490BBF0} = {F2410C96-4E93-434D-9478-CBC58D60697D}
+		{5E9BECDA-03F0-41FF-B9EF-02538C83E1E4} = {06D02E4F-A46E-4832-B6C5-906AFC751435}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F9C0AAF9-3389-4F5C-9264-7488C0AD077D}

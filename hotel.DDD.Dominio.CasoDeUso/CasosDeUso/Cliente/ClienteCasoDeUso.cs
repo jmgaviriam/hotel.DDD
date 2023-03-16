@@ -1,18 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using hotel.DDD.Dominio.Agregados.Cliente.Entidades;
+﻿using hotel.DDD.Dominio.Agregados.Cliente.Entidades;
+using hotel.DDD.Dominio.Agregados.Cliente.ObjetosDeValor.ObjetosDeValorCliente;
+using hotel.DDD.Dominio.Agregados.Cliente.ObjetosDeValor.ObjetosDeValorPQR;
 using hotel.DDD.Dominio.CasoDeUso.ViasDeAcceso.Cliente;
 using hotel.DDD.Dominio.CasoDeUso.ViasDeAcceso.Eventos;
 using hotel.DDD.Dominio.Comandos.Cliente;
 using hotel.DDD.Dominio.Comun;
 using hotel.DDD.Dominio.Eventos.Cliente;
 using hotel.DDD.Dominio.Generico;
-using hotel.DDD.Dominio.Agregados.Cliente.ObjetosDeValor.ObjetosDeValorCliente;
-using hotel.DDD.Dominio.Agregados.Cliente.ObjetosDeValor.ObjetosDeValorHistorialDeReservas;
-using hotel.DDD.Dominio.Agregados.Cliente.ObjetosDeValor.ObjetosDeValorPQR;
 using Newtonsoft.Json;
 
 namespace hotel.DDD.Dominio.CasoDeUso.CasosDeUso.Cliente
