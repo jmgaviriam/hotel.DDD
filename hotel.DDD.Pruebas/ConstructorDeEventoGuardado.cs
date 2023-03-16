@@ -1,6 +1,6 @@
 ﻿using hotel.DDD.Dominio.Generico;
 
-namespace hotel.DDD.Pruebas.Cliente.Constructores
+namespace hotel.DDD.Pruebas
 {
     public class ConstructorDeEventoGuardado
     {

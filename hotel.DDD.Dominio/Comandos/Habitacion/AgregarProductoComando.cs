@@ -13,5 +13,14 @@ namespace hotel.DDD.Dominio.Comandos.Habitacion
         public string Descripcion { get; set; }
         public Decimal Precio { get; set; }
         public int Cantidad { get; set; }
+
+        public AgregarProductoComando(string habitacionId, string nombre, string descripcion, Decimal precio, int cantidad)
+        {
+            HabitacionId = habitacionId;
+            Nombre = nombre;
+            Descripcion = descripcion;
+            Precio = precio;
+            Cantidad = cantidad;
+        }
     }
 }

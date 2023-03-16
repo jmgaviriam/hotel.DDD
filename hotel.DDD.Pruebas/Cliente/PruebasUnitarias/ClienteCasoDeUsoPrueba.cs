@@ -7,11 +7,11 @@ using Moq;
 
 namespace hotel.DDD.Pruebas.Cliente.PruebasUnitarias
 {
-    public class ClienteCasoDeUsoPrueba
+    public class HabitacionCasoDeUsoPrueba
     {
         private readonly Mock<IRepositorioDeEventos<EventoGuardado>> _mockRepositorioDeEventos;
 
-        public ClienteCasoDeUsoPrueba()
+        public HabitacionCasoDeUsoPrueba()
         {
             _mockRepositorioDeEventos = new();
         }
@@ -96,7 +96,7 @@ namespace hotel.DDD.Pruebas.Cliente.PruebasUnitarias
                 .Construir();
 
         private AgregarPQRComando ObtenerComandoDePQR() =>
-            new ConstructorDeAgregarPQR()
+            new ConstructorDeAgregarProducto()
                 .ConClienteId("7c9e6679-7425-40de-944b-e07fc1f90ae7")
                 .ConFecha(DateTime.Now)
                 .ConMotivo("Motivo")

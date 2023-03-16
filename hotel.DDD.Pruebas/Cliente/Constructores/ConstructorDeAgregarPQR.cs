@@ -8,25 +8,25 @@ using System.Threading.Tasks;
 
 namespace hotel.DDD.Pruebas.Cliente.Constructores
 {
-    public class ConstructorDeAgregarPQR
+    public class ConstructorDeAgregarProducto
     {
         public string ClienteId;
         public DateTime Fecha;
         public string Motivo;
 
-        public ConstructorDeAgregarPQR ConClienteId(string clienteId)
+        public ConstructorDeAgregarProducto ConClienteId(string clienteId)
         {
             ClienteId = clienteId;
             return this;
         }
 
-        public ConstructorDeAgregarPQR ConFecha(DateTime fecha)
+        public ConstructorDeAgregarProducto ConFecha(DateTime fecha)
         {
             Fecha = fecha;
             return this;
         }
 
-        public ConstructorDeAgregarPQR ConMotivo(string motivo)
+        public ConstructorDeAgregarProducto ConMotivo(string motivo)
         {
             Motivo = motivo;
             return this;
