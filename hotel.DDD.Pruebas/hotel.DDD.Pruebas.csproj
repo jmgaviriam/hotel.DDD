@@ -27,4 +27,5 @@
 		<ProjectReference Include="..\hotel.DDD.Dominio.CasoDeUso\hotel.DDD.Dominio.CasoDeUso.csproj" />
 	</ItemGroup>
 
-		</Project>
+
+</Project>

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace hotel.DDD.Pruebas.Habitacion.Constructores
 {
-    public class ConstructorDeAgregarProducto
+    public class ConstructorDeAsignarFuncionario
     {
         public string HabitacionId;
         public string Nombre;
@@ -16,31 +16,31 @@ namespace hotel.DDD.Pruebas.Habitacion.Constructores
         public Decimal Precio;
         public int Cantidad;
 
-        public ConstructorDeAgregarProducto ConHabitacionId(string habitacionId)
+        public ConstructorDeAsignarFuncionario ConHabitacionId(string habitacionId)
         {
             HabitacionId = habitacionId;
             return this;
         }
 
-        public ConstructorDeAgregarProducto ConNombre(string nombre)
+        public ConstructorDeAsignarFuncionario ConNombre(string nombre)
         {
             Nombre = nombre;
             return this;
         }
 
-        public ConstructorDeAgregarProducto ConDescripcion(string descripcion)
+        public ConstructorDeAsignarFuncionario ConDescripcion(string descripcion)
         {
             Descripcion = descripcion;
             return this;
         }
 
-        public ConstructorDeAgregarProducto ConPrecio(Decimal precio)
+        public ConstructorDeAsignarFuncionario ConPrecio(Decimal precio)
         {
             Precio = precio;
             return this;
         }
 
-        public ConstructorDeAgregarProducto ConCantidad(int cantidad)
+        public ConstructorDeAsignarFuncionario ConCantidad(int cantidad)
         {
             Cantidad = cantidad;
             return this;

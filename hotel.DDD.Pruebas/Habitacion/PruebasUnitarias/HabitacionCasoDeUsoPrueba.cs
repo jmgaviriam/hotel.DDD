@@ -99,7 +99,7 @@ namespace hotel.DDD.Pruebas.Habitacion.PruebasUnitarias
                 .Construir();
 
         private AgregarProductoComando ObtenerComandoProducto() =>
-            new ConstructorDeAgregarProducto()
+            new ConstructorDeAsignarFuncionario()
                 .ConHabitacionId("7c9e6679-7425-40de-944b-e07fc1f90ae7")
                 .ConNombre("Nombre")
                 .ConDescripcion("Descripcion")
