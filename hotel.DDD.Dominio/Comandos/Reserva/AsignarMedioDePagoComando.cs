@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace hotel.DDD.Dominio.Comandos.Reserva
 {
-    public class AsignarMedioDePago
+    public class AsignarMedioDePagoComando
     {
+        public string ReservaId { get; set; }
+        public string Nombre { get; set; }
+        public string Descripcion { get; set; }
     }
 }

@@ -5,13 +5,15 @@ namespace hotel.DDD.Dominio.Agregados.Reserva.Entidades
     public class MedioDePago
     {
         public Guid Id { get; private set; }
-        public TipoDeMedioDePago TipoDeMedioDePago { get; private set; }
-        public Guid ReservaId { get; init; }
-        public virtual Reserva Reserva { get; private set; }
+        public TipoDeMedioDePago TipoDeMedioDePago { get; set; }
 
-        public MedioDePago(Guid id, TipoDeMedioDePago tipoDeMedioDePago)
+        public MedioDePago(Guid id)
         {
             this.Id = id;
+        }
+
+        public void SetTipoDeMedioDePago(TipoDeMedioDePago tipoDeMedioDePago)
+        {
             this.TipoDeMedioDePago = tipoDeMedioDePago;
         }
 

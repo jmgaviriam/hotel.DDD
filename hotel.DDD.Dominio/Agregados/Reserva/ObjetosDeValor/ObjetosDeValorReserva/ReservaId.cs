@@ -1,22 +1,14 @@
-﻿namespace hotel.DDD.Dominio.Agregados.Reserva.ObjetosDeValor.ObjetosDeValorReserva
+﻿using hotel.DDD.Dominio.Comun;
+
+namespace hotel.DDD.Dominio.Agregados.Reserva.ObjetosDeValor.ObjetosDeValorReserva
 {
-    public record ReservaId
+    public class ReservaId : Identidad
     {
-        public Guid value { get; init; }
+        internal ReservaId(Guid id) : base(id) { }
 
-        public ReservaId(Guid value)
+        public static ReservaId Create(Guid id)
         {
-            this.value = value;
-        }
-
-        public static ReservaId Create(Guid value_)
-        {
-            return new ReservaId(value_);
-        }
-
-        public static implicit operator Guid(ReservaId reservaId)
-        {
-            return reservaId.value;
+            return new ReservaId(id);
         }
     }
 }
